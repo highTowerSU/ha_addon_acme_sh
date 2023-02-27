@@ -25,18 +25,14 @@
     }
   },
   "schema": {
-    "account": "a@b.de",
-    "server": "letsencrypt",
+    "account": "email",
+    "server": "str",
     "domains": ["str"],
     "certfile": "str",
     "keyfile": "str",
     "dns": {
-      "provider": "dns_cloudns",
-      "env": [
-        "CLOUDNS_SUB_AUTH_ID=1234",
-        "CLOUDNS_AUTH_ID=5678",
-        "CLOUDNS_AUTH_PASSWORD=aaaa"
-      ]
+      "provider": "str",
+      "env": ["str"]
     }
   }
 }
