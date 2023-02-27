@@ -1,5 +1,5 @@
 {
   "name": "Home Assistant ACME.sh (wasv)",
-  "url": "https://github.com/wasv/ha_addon_acme_sh",
-  "maintainer": "Billie Stevens <contact@wasv.me>"
+  "url": "https://github.com/highTowerSU/ha_addon_acme_sh",
+  "maintainer": "highTower <github@hightower.su>"
 }
