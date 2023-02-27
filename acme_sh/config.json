@@ -9,12 +9,18 @@
   "boot": "manual",
   "map": ["ssl:rw"],
   "options": {
-    "account": "str",
-    "server": "str",
-    "domains": [null],
+    "account": "a@b.de",
+    "server": "letsencrypt",
+    "domains": ["str"],
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem",
-    "dns": {}
+    "dns": {
+      "provider": "dns_cloudns",
+      "env": 
+        - "CLOUDNS_SUB_AUTH_ID=1234"
+        - "CLOUDNS_AUTH_ID=5678"
+        - "CLOUDNS_AUTH_PASSWORD=aaaa"
+    }
   },
   "schema": {
     "account": "a@b.de",
@@ -25,9 +31,9 @@
     "dns": {
       "provider": "dns_cloudns",
       "env": 
-        - CLOUDNS_SUB_AUTH_ID=1234
-        - CLOUDNS_AUTH_ID=5678
-        - CLOUDNS_AUTH_PASSWORD=aaaa
+        - "CLOUDNS_SUB_AUTH_ID=1234"
+        - "CLOUDNS_AUTH_ID=5678"
+        - "CLOUDNS_AUTH_PASSWORD=aaaa"
     }
   }
 }
