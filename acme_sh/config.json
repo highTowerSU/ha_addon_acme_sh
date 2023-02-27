@@ -14,9 +14,9 @@
     "domains": ["str"],
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem",
-    "dns": {
-      "provider": "dns_cloudns",
-      "env": 
+    "dns":
+      - "provider": "dns_cloudns",
+      - "env": 
         - "CLOUDNS_SUB_AUTH_ID=1234"
         - "CLOUDNS_AUTH_ID=5678"
         - "CLOUDNS_AUTH_PASSWORD=aaaa"
@@ -28,12 +28,13 @@
     "domains": ["str"],
     "certfile": "str",
     "keyfile": "str",
-    "dns": {
-      "provider": "dns_cloudns",
-      "env": 
+    "dns": 
+      - "provider": "dns_cloudns",
+      - "env":
         - "CLOUDNS_SUB_AUTH_ID=1234"
         - "CLOUDNS_AUTH_ID=5678"
         - "CLOUDNS_AUTH_PASSWORD=aaaa"
+
     }
   }
 }
