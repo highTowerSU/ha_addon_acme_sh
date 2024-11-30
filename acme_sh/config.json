@@ -13,13 +13,10 @@
     "account": "a@b.c",
     "server": "letsencrypt",
     "domains": ["str"],
-    "domainalias": null,
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem",
-    "dns": {
-      "provider": "dns_cloudns",
-      "sleep": null,
-      "env": [
+    "dns_provider": "dns_cloudns",
+    "dns_env": [
         "CLOUDNS_SUB_AUTH_ID=1234",
         "CLOUDNS_AUTH_ID=5678",
         "CLOUDNS_AUTH_PASSWORD=aaaa"
@@ -33,10 +30,8 @@
     "domainalias": "str?",
     "certfile": "str",
     "keyfile": "str",
-    "dns": {
-      "provider": "str",
-      "sleep": "str",
-      "env": ["str"]
-    }
+    "dns_provider": "str",
+    "dns_sleep": "str",
+    "dns_env": ["str"]
   }
 }
