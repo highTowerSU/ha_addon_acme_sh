@@ -1,6 +1,6 @@
 {
   "name": "ACME.sh Certs",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "slug": "acme_sh",
   "description": "Manage certificates with ACME.sh",
   "url": "https://github.com/wernerhp/ha_addon_acme_sh",
@@ -10,11 +10,13 @@
   "init": false,
   "map": ["ssl:rw"],
   "options": {
-    "account": "a@b.de",
+    "account": "a@b.c",
     "server": "letsencrypt",
     "domains": ["str"],
+    "domainalias": null,
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem",
+    "sleep": null,
     "dns": {
       "provider": "dns_cloudns",
       "env": [
@@ -28,8 +30,10 @@
     "account": "email",
     "server": "str",
     "domains": ["str"],
+    "domainalias": "str?",
     "certfile": "str",
     "keyfile": "str",
+    "sleep": "str",
     "dns": {
       "provider": "str",
       "env": ["str"]
