@@ -5,9 +5,9 @@ SERVER=$(bashio::config 'server')
 DOMAINS=$(bashio::config 'domains')
 KEYFILE=$(bashio::config 'keyfile')
 CERTFILE=$(bashio::config 'certfile')
-DNS_PROVIDER=$(bashio::config 'dns.provider')
-DNS_SLEEP=$(bashio::config 'dns.sleep')
-DNS_ENVS=$(bashio::config 'dns.env')
+DNS_PROVIDER=$(bashio::config 'dns_provider')
+DNS_SLEEP=$(bashio::config 'dns_sleep')
+DNS_ENVS=$(bashio::config 'dns_env')
 DOMAIN_ALIAS=$(bashio::config 'domainalias')
 
 for env in $DNS_ENVS; do
