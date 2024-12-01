@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bashio
+ho#!/usr/bin/with-contenv bashio
 
 ACCOUNT=$(bashio::config 'account')
 SERVER=$(bashio::config 'server')
@@ -27,6 +27,7 @@ fi
 DOMAIN_ALIAS_ARG=""
 if [ -n "$DOMAIN_ALIAS" ]; then
     DOMAIN_ALIAS_ARG="--domain-alias $DOMAIN_ALIAS"
+    echo $DOMAIN_ALIAS_ARG
 fi
 
 if [ -z $DNS_SLEEP ]; then
