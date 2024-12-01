@@ -1,4 +1,4 @@
-ho#!/usr/bin/with-contenv bashio
+#!/usr/bin/with-contenv bashio
 
 ACCOUNT=$(bashio::config 'account')
 SERVER=$(bashio::config 'server')
