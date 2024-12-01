@@ -25,9 +25,8 @@ if [ -n "$SERVER" ]; then
 fi
 
 DOMAIN_ALIAS_ARG=""
-if [ -n "$DOMAIN_ALIAS" ]; then
+if [ -n "$DOMAIN_ALIAS" -a "$DOMAIN_ALIAS" != "null" ]; then
     DOMAIN_ALIAS_ARG="--domain-alias $DOMAIN_ALIAS"
-    echo $DOMAIN_ALIAS_ARG
 fi
 
 if [ -z $DNS_SLEEP ]; then
